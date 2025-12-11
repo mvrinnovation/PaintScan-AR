@@ -3,7 +3,7 @@
 <head>
     
     <meta charset="UTF-8">
-    <meta name="apple-mobile-web-app-capable" content="yes"> 
+    <meta name="apple-mobile-web-app-capable" content="yes">
     <title>PraintedWall</title>
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
@@ -11,7 +11,7 @@
 <body>
     <a-scene embedded arjs="patternRatio:0.90;">
         <a-marker type="pattern" url="PaintScan-AR.patt">
-            <a-plane id="myObject" position="-1 -5 0" scale="0 10 0" rotation="-90 0 0" color="color[index]"></a-plane>
+            <a-plane id="myObject" position="-1 -5 0" scale="5 15 5" rotation="-90 0 0" color="color[index]"></a-plane>
         </a-marker>
         <a-entity camera></a-entity>
     </a-scene>
@@ -24,14 +24,7 @@
             const object = document.querySelector('#myObject');
             object.setAttribute('material', 'color', colors[index]);
         });
-
     </Script>
 
 </body>
 </html>
-
-
-
-
-
-
